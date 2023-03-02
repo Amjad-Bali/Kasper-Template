@@ -477,3 +477,61 @@ header .container nav .form i {
 	text-decoration: none;
 }
 /* End Protfolio Section */
+/* Start Video Section */
+.video {
+	position: relative;
+}
+.video::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(0, 0%, 0%, 0.4);
+}
+.video video {
+	width: 100%;
+}
+.video .text {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	text-align: center;
+	width: 100%;
+	padding: 50px;
+	background-color: var(--transpert-color);
+	color: white;
+}
+@media (max-width: 767px) {
+	.video .text {
+		padding: 10px 20px;
+	}
+	.video .text h2 {
+		margin-bottom: 10px !important;
+		font-size: 1.2em;
+	}
+	.video .text p {
+		margin-bottom: 10px !important;
+	}
+	.video .text button {
+		padding: 5px 10px !important;
+	}
+}
+.video .text h2 {
+	margin: 0 0 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.video .text p {
+	margin-bottom: 20px;
+}
+.video .text button {
+	background-color: black;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	text-transform: uppercase;
+}
+/* End Video Section */
