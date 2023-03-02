@@ -554,3 +554,68 @@ header .container nav .form i {
 	}
 }
 /* End About Section */
+/* Start State Section */
+.state {
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
+	background-image: url(/image/quote.jpg);
+	text-align: center;
+	background-size: cover;
+	position: relative;
+}
+.state::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(0, 0%, 0%, 0.7);
+}
+.state .container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+.state .container .box {
+	background-color: var(--transpert-color);
+	color: white;
+	padding: 50px;
+}
+
+@media (max-width: 767px) {
+	.state .container .box {
+		flex-basis: 100%;
+	}
+}
+@media (min-width: 768px) {
+	.state .container .box {
+		flex-basis: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.state .container .box {
+		flex-basis: 25%;
+	}
+}
+.state .container .box i {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 30px;
+}
+.state .container .box .number {
+	font-weight: bold;
+	font-size: 50px;
+	margin: 0 0 20px;
+}
+.state .container .box p {
+	font-size: 14px;
+}
+/* End State Section */
