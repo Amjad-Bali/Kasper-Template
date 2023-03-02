@@ -737,3 +737,40 @@ header .container nav .form i {
 	border-color: black transparent transparent transparent;
 }
 /* End Skills Section */
+/*  Start  quote Section */
+.quote {
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
+	background-image: url(/image/quote.jpg);
+	background-size: cover;
+	position: relative;
+	color: white;
+	text-align: center;
+}
+.quote::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(0, 0%, 0%, 0.7);
+}
+.quote .container {
+	position: relative;
+}
+.quote .container q {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+/* .quote .container q::before {
+	content: "";
+	font-family: "Font Awesome 5 Free";
+	content: "\f10e";
+	font-weight: 900;
+	font-size: 10px;
+	position: absolute;
+} */
+
+/*  End  quote Section */
