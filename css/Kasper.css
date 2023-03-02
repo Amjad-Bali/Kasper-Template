@@ -287,3 +287,51 @@ header .container nav .form i {
 	border-color: var(--main-color);
 }
 /*End landing Section*/
+/*Start Services Section*/
+.services {
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
+}
+@media (min-width: 768px) {
+	.services .services-content {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+		grid-column-gap: 40px;
+		grid-column-gap: 60px;
+	}
+}
+.services .services-content .serv-box {
+	display: flex;
+}
+.services .services-content .serv-box i {
+	color: #444;
+	margin-right: 50px;
+	/* flex-basis: 100px; */
+}
+@media (max-width: 767px) {
+	.services .services-content .serv-box {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.services .services-content .serv-box i {
+		margin: 0 0 30px;
+	}
+}
+/* .services .services-content .serv-box .text {
+	flex: 1;
+} */
+.services .services-content .serv-box .text h3 {
+	color: var(--main-color);
+	font-weight: normal;
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+.services .services-content .serv-box .text p {
+	color: #777;
+	line-height: 2;
+	font-size: 13px;
+}
+
+/*ُEnd Services Section*/
