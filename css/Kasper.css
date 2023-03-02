@@ -333,5 +333,72 @@ header .container nav .form i {
 	line-height: 2;
 	font-size: 13px;
 }
-
 /*ُEnd Services Section*/
+/*Start Design Section*/
+.design {
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-image: url(/image/design-features.jpg);
+	background-color: #1f2021;
+	background-size: cover;
+	height: 600px;
+	overflow: hidden;
+}
+.design::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(0, 0%, 0%, 0.4);
+}
+.design .image,
+.design .text {
+	position: relative;
+	flex: 1;
+	z-index: 2;
+}
+.design .image {
+	/* position: absolute;
+	bottom: -79px;
+	left: 40%;
+	transform: translateX(-40%); */
+	text-align: center;
+}
+.design .image img {
+	position: relative;
+	bottom: -150px;
+	height: 450px;
+}
+@media (max-width: 767px) {
+	.design .image {
+		display: none;
+	}
+}
+.design .text {
+	padding: 50px;
+	background-color: var(--transpert-color);
+	color: white;
+}
+.design .text h2 {
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+.design .text ul li {
+	padding: 15px 0;
+}
+.design .text ul li::before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f108";
+	font-weight: 900;
+	margin-right: 20px;
+	position: relative;
+	top: 1px;
+}
+/*End Design Section*/
