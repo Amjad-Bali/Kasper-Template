@@ -15,7 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css">
-    <title>Template 2</title>
+     <!-- favicon header -->
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <title>Kasper Template</title>
 </head>
 <body>
       <!-- star header -->
@@ -133,10 +135,10 @@
               quod provident et velit odit tempora.</p>
       </div>
       <ul class="shuffle">
-          <li class="active" data-cont=".app">App</li>
-          <li data-cont=".photo">Photo</li>
-          <li data-cont=".web">Web</li>
-          <li data-cont=".print">Print</li>
+          <li class="active" data-type=".app">App</li>
+          <li data-type=".photo">Photo</li>
+          <li data-type=".web">Web</li>
+          <li data-type=".print">Print</li>
       </ul>
   </div>
   <div class="imgs-container">
@@ -257,23 +259,63 @@
           <h3>Testimonials</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure aperiam quisquam aliquid illo nisi?
               Asperiores.</p>
-          <div class="content">
-              <img src="./image/skills-01.jpg" alt="">
-              <div class="text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aperiam est debitis saepe minus
-                  ullam?
-                  <p>Johan Doe,CEO</p>
-              </div>
-          </div>
-          <div class="content">
-              <img src="./image/skills-02.jpg" alt="">
-              <div class="text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aperiam est debitis saepe minus
-                  ullam?
-                  <p>Johan Doe,CEO</p>
-              </div>
-          </div>
-          <ul class="bullets">
+              <div class="wrapper">
+                <div class="box">
+                    <div class="content">
+                        <img src="./image/skills-02.jpg" alt="">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aperiam est debitis saepe minus
+                            ullam?
+                            <p>Johan Doe,CEO</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img src="./image/skills-01.jpg" alt="">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aperiam est debitis saepe minus
+                            ullam?
+                            <p>Johan Doe,CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box visable">
+                    <div class="content">
+                        <img src="./image/skills-01.jpg" alt="">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aperiam est debitis saepe minus
+                            ullam?
+                            <p>Johan Doe,CEO</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img src="./image/skills-02.jpg" alt="">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aperiam est debitis saepe minus
+                            ullam?
+                            <p>Johan Doe,CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src="./image/skills-02.jpg" alt="">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aperiam est debitis saepe minus
+                            ullam?
+                            <p>Johan Doe,CEO</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img src="./image/skills-02.jpg" alt="">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aperiam est debitis saepe minus
+                            ullam?
+                            <p>Johan Doe,CEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <ul class="bullets2">
               <li></li>
               <li class="active"></li>
               <li></li>
@@ -287,25 +329,25 @@
           <div class="prog-holder">
               <h4>Adobe</h4>
               <div class="prog">
-                  <span style="width: 1%;" data-progress="1%" data-progress2="90"></span>
+                  <span  data-text="1" data-value="90"></span>
               </div>
           </div>
           <div class="prog-holder">
               <h4>Html &amp; Css</h4>
               <div class="prog">
-                  <span style="width: 1%;" data-progress="1%" data-progress2="80"></span>
+                  <span  data-text="1%" data-value="80"></span>
               </div>
           </div>
           <div class="prog-holder">
               <h4>Css</h4>
               <div class="prog">
-                  <span style="width: 1%;" data-progress="1%" data-progress2="70"></span>
+                  <span  data-text="1%" data-value="70"></span>
               </div>
           </div>
           <div class="prog-holder">
               <h4>Jave Script</h4>
               <div class="prog">
-                  <span style="width: 1%;" data-progress="1%" data-progress2="60"></span>
+                  <span  data-text="1%" data-value="60"></span>
               </div>
           </div>
 
@@ -334,7 +376,7 @@
           <div class="plan">
               <div class="header">
                   <h3>Basic</h3>
-                  <span data-num="19">1</span>
+                  <span data-value="19">1</span>
               </div>
               <ul>
                   <li>Feature No 1</li>
@@ -349,7 +391,7 @@
           <div class="plan">
               <div class="header">
                   <h3>Premum</h3>
-                  <span data-num="29">1</span>
+                  <span data-value="29">1</span>
               </div>
               <ul>
                   <li>Feature No 1</li>
@@ -364,7 +406,7 @@
           <div class="plan">
               <div class="header">
                   <h3>Pro</h3>
-                  <span data-num="39">1</span>
+                  <span data-value="39">1</span>
               </div>
               <ul>
                   <li>Feature No 1</li>
@@ -379,7 +421,7 @@
           <div class="plan">
               <div class="header">
                   <h3>Platinum</h3>
-                  <span data-num="49">1</span>
+                  <span data-value="49">1</span>
               </div>
               <ul>
                   <li>Feature No 1</li>
@@ -455,5 +497,6 @@
   </div>
 </div>
 <!-- End Footer  -->
+<script src="/js/main.js"></script>
 </body>
 </html>
