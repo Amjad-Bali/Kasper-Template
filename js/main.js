@@ -43,9 +43,9 @@ iconsPrevios.addEventListener("click", () => {
 
 let i = 0;
 let img = [];
-img[0] = `url(../image/landingTwo.jpg)`;
-img[1] = `url(../image/landing.jpg)`;
-img[2] = `url(../image/subscribe.jpg)`;
+img[0] = `url(./image/landingTwo.jpg)`;
+img[1] = `url(./image/landing.jpg)`;
+img[2] = `url(./image/subscribe.jpg)`;
 
 /* console.log(landing) */
 

@@ -214,10 +214,11 @@ header .container nav .form i {
 /*Start landing Section*/
 .landing {
 	min-height: 100vh;
-	background-image: url(../image/landingTwo.jpg);
+	background-image: url(./image/landingTwo.jpg);
 	background-color: #1f2021;
 	background-size: cover;
 	position: relative;
+	transition:0.8s ;
 }
 .landing .overly {
 	background-color: rgba(0, 0, 0, 40%);
