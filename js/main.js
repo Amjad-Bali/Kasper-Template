@@ -30,7 +30,7 @@ let bulletsArray = Array.from(bulletsLi);
 
 const interval = setInterval(() => {
   nextImag();
-}, 2500);
+}, 5000);
 
 iconsNext.addEventListener("click", nextImag);
 iconsNext.addEventListener("click", () => {
@@ -43,9 +43,9 @@ iconsPrevios.addEventListener("click", () => {
 
 let i = 0;
 let img = [];
-img[0] = `url(../image/landing2.jpg)`;
-img[1] = `url(../image/landing.jpg)`;
-img[2] = `url(../image/subscribe.jpg)`;
+img[0] = `url(image/landing2.jpg)`;
+img[1] = `url(image/landing.jpg)`;
+img[2] = `url(image/subscribe.jpg)`;
 
 /* console.log(landing) */
 
@@ -134,8 +134,8 @@ function EnterPrincing() {
 let bullets2 = Array.from(document.querySelectorAll(".our-skills .testimonials .bullets2 li"));
 let testimonials = Array.from(document.querySelectorAll(".our-skills .testimonials .wrapper .box"));
 
-console.log(bullets2);
-console.log(testimonials);
+/* console.log(bullets2);
+console.log(testimonials); */
 
 bullets2.forEach((ele, index) => {
   ele.addEventListener("click", function () {
